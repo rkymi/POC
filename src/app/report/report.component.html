@@ -1,0 +1,19 @@
+<p>{{title}} Mounted</p>
+<div style="display: flex;justify-content: center;margin-top: 50px;">
+    <table>
+      <thead>
+        <tr>
+        <th>SN</th>
+        <th>Country</th>
+        <th>Country Code</th>
+      </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let report of reports; let i=index">
+          <td>{{i + 1}}</td>
+          <td>{{report.country}}</td>
+          <td>{{report.countryCode}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
